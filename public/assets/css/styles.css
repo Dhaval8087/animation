@@ -61,7 +61,7 @@ img {
   text-decoration: none;
 }
 
-.motionSVG {
+#motionSVG {
   translate: none;
   rotate: none;
   scale: none;
@@ -84,6 +84,7 @@ img {
   );
   border-radius: 50%;
   z-index: 1;
+  visibility: hidden;
 }
 
 .gsap-marker-end,
