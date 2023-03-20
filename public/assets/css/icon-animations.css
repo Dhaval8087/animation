@@ -143,19 +143,27 @@
 }
 
 /* Automotive icon */
-.automotive .automotive-block {
-  animation: automotive-rotate 2s linear infinite alternate;
+.automotive {
+
+}
+
+.automotive:hover {
+  animation: automotive-rotate 1s linear forwards;
   transform-origin: 50% 50%;
   transform-box: fill-box; /* Important, otherwise animation is not centered */
 }
 
-.automotive:hover .automotive-block {
-  animation: automotive-rotateR 2s linear infinite alternate;
-  transform-origin: 50% 50%;
-  transform-box: fill-box; /* Important, otherwise animation is not centered */
+.automotive .automotive-block {
+  stroke: #ff7900;
 }
 
 @keyframes automotive-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes automotive-rotateR {
