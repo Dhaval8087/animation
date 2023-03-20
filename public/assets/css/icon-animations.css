@@ -6,18 +6,23 @@
   padding: 5px;
 }
 
-.card{
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
-.card > span{
+svg {
+  height: 100px;
+}
+
+.card > span {
   color: white;
   margin-top: 10px;
 }
 
-svg:hover + span{
+svg:hover + span {
   color: #ff7900;
 }
 
@@ -159,7 +164,6 @@ svg:hover + span{
 
 /* Automotive icon */
 .automotive {
-
 }
 
 .automotive:hover {
