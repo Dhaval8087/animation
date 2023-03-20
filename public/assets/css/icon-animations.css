@@ -162,20 +162,57 @@
 }
 
 /* apparel icon */
-.apparel {
-  background-image: url("../images/Apparel.svg");
+.hook2 {
+  visibility: hidden;
 }
 
-.apparel:hover {
-  opacity: 1;
-  animation: apparel-in 200ms linear forwards;
+.cloth {
+  visibility: hidden;
 }
 
-@keyframes apparel-in {
+.apparel:hover .hook2 {
+  visibility: visible;
+  animation: 2s ease opacityHook2 forwards;
+}
+
+.apparel:hover .cloth {
+  animation: 1s ease bounceBottomCloth forwards;
+}
+
+.apparel:hover .hanger-line {
+  visibility: hidden;
+}
+
+.apparel:hover .hook {
+  animation: 2s ease opacityHook forwards;
+}
+
+@keyframes opacityHook2 {
   0% {
-    background-image: url("../images/Apparel.svg");
+    opacity: 0;
   }
   100% {
-    background-image: url("../images/Hanger.svg");
+    opacity: 1;
+  }
+}
+
+@keyframes opacityHook {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bounceBottomCloth {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
   }
 }
