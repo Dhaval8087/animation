@@ -1,0 +1,181 @@
+.icon-animation-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #1f213c;
+  padding: 5px;
+}
+
+/* Laptop icon */
+.laptop {
+  background-image: url("../images/Fintech.svg");
+}
+.connector {
+  visibility: hidden;
+}
+
+.dollar {
+  visibility: hidden;
+  transform: translateY(19px);
+  stroke: white;
+}
+
+.laptop:hover {
+  background-image: none;
+}
+
+.laptop:hover .dollar {
+  visibility: visible;
+  animation: 1s ease bounceTop forwards;
+}
+
+.laptop:hover .connector {
+  animation: 1s ease bounceTopConnector forwards;
+}
+
+@keyframes bounceTop {
+  from {
+    transform: translateY(19px);
+  }
+
+  to {
+    transform: translateY(-5px);
+    stroke: #ff7900;
+  }
+}
+
+@keyframes bounceTopConnector {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    visibility: visible;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes bounceBack {
+  from {
+    transform: translateY(0);
+    stroke: #ff7900;
+  }
+
+  to {
+    transform: translateY(20px);
+  }
+}
+
+/* Industry icon */
+.industry {
+  background-image: url("../images/Manufacturing.svg");
+}
+
+.industry .gear {
+  animation: 300ms rotate;
+  transform-origin: 50% 50%;
+  transform-box: fill-box; /* Important, otherwise animation is not centered */
+}
+
+.industry:hover .gear {
+  animation: 300ms forwards rotateR;
+  transform-origin: 50% 50%;
+  transform-box: fill-box; /* Important, otherwise animation is not centered */
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    stroke: #ff7900;
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateR {
+  0% {
+    -webkit-transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    stroke: #ff7900;
+  }
+}
+
+/* Health icon */
+.health {
+  background-image: url("../images/Healthcare.svg");
+}
+
+.health .square {
+  animation: 300ms rotate;
+  transform-origin: 50% 50%;
+  transform-box: fill-box; /* Important, otherwise animation is not centered */
+}
+
+.health:hover .square {
+  animation: 300ms forwards rotateR;
+  transform-origin: 50% 50%;
+  transform-box: fill-box; /* Important, otherwise animation is not centered */
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    stroke: #ff7900;
+  }
+  to {
+    -webkit-transform: rotate(90deg);
+  }
+}
+
+@keyframes rotateR {
+  0% {
+    -webkit-transform: rotate(90deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    stroke: #ff7900;
+  }
+}
+
+/* Automotive icon */
+.automotive .automotive-block {
+  animation: automotive-rotate 2s linear infinite alternate;
+  transform-origin: 50% 50%;
+  transform-box: fill-box; /* Important, otherwise animation is not centered */
+}
+
+.automotive:hover .automotive-block {
+  animation: automotive-rotateR 2s linear infinite alternate;
+  transform-origin: 50% 50%;
+  transform-box: fill-box; /* Important, otherwise animation is not centered */
+}
+
+@keyframes automotive-rotate {
+}
+
+@keyframes automotive-rotateR {
+}
+
+/* apparel icon */
+.apparel {
+  background-image: url("../images/Apparel.svg");
+}
+
+.apparel:hover {
+  opacity: 1;
+  animation: apparel-in 200ms linear forwards;
+}
+
+@keyframes apparel-in {
+  0% {
+    background-image: url("../images/Apparel.svg");
+  }
+  100% {
+    background-image: url("../images/Hanger.svg");
+  }
+}
