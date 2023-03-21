@@ -163,16 +163,19 @@ svg:hover + span {
 }
 
 /* Automotive icon */
-.automotive {
-}
-
-.automotive:hover {
-  animation: automotive-rotate 1s linear forwards;
+.automotive .automotive-block {
+  animation: automotive-rotateR 200ms linear forwards;
   transform-origin: 50% 50%;
   transform-box: fill-box; /* Important, otherwise animation is not centered */
 }
 
-.automotive .automotive-block {
+.automotive:hover .automotive-block {
+  animation: automotive-rotate 200ms linear forwards;
+  transform-origin: 50% 50%;
+  transform-box: fill-box; /* Important, otherwise animation is not centered */
+}
+
+.automotive:hover .automotive-block > path{
   stroke: #ff7900;
 }
 
@@ -181,11 +184,17 @@ svg:hover + span {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(180deg);
   }
 }
 
 @keyframes automotive-rotateR {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
 }
 
 /* apparel icon */
