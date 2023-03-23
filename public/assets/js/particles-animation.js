@@ -5,7 +5,7 @@ const defaultOptions = {
   maxWidth: 400,
   particleGap: 5,
   particleSize: "4",
-  disableInteraction: true,
+  mouseForce:"-3",
   renderer: "webgl",
 };
 var nextParticle = [];

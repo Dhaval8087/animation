@@ -164,13 +164,13 @@ svg:hover + span {
 
 /* Automotive icon */
 .automotive .automotive-block {
-  animation: automotive-rotateR 200ms linear forwards;
+  animation: automotive-rotateR 300ms linear forwards;
   transform-origin: 50% 50%;
   transform-box: fill-box; /* Important, otherwise animation is not centered */
 }
 
 .automotive:hover .automotive-block {
-  animation: automotive-rotate 200ms linear forwards;
+  animation: automotive-rotate 300ms linear forwards;
   transform-origin: 50% 50%;
   transform-box: fill-box; /* Important, otherwise animation is not centered */
 }
