@@ -198,6 +198,10 @@ svg:hover + span {
 }
 
 /* apparel icon */
+.apparel .hook {
+  animation: 300ms ease bounceBottomCloth forwards;
+}
+
 .hook2 {
   visibility: hidden;
 }
@@ -208,11 +212,11 @@ svg:hover + span {
 
 .apparel:hover .hook2 {
   visibility: visible;
-  animation: 2s ease opacityHook2 forwards;
+  animation: 800ms ease opacityHook2 forwards;
 }
 
 .apparel:hover .cloth {
-  animation: 1s ease bounceBottomCloth forwards;
+  animation: 800ms ease bounceBottomCloth forwards;
 }
 
 .apparel:hover .hanger-line {
@@ -220,7 +224,7 @@ svg:hover + span {
 }
 
 .apparel:hover .hook {
-  animation: 2s ease opacityHook forwards;
+  animation: 800ms ease opacityHook forwards;
 }
 
 @keyframes opacityHook2 {
