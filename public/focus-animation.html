@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Line Navigation</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .item {
+        width: 658px;
+        margin: 50px auto;
+      }
+      .title-text {
+        font-family: "Neue Haas Grotesk Display Pro";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 54px;
+        color: white;
+        padding-bottom: 40px;
+      }
+      .title-text::first-letter {
+        color: #ff7900;
+      }
+      .content-text {
+        font-family: "Neue Haas Grotesk Display Pro";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        color: white;
+      }
+      .focus {
+        font-size: 200px;
+        height: 300px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body style="background-color: #202440">
+    <div class="nav-wrapper">
+      <a href="./particle.html">Focus</a>
+      <a href="./map.html">Map</a>
+      <a href="./line-navigation.html">Line Navigation</a>
+      <a href="./spider-particle.html">Spider Particle</a>
+      <a href="./icon-animation.html">Icon Animation</a>
+      <a href="./focus-animation.html">Focus Animation</a>
+    </div>
+
+    <div style="display: flex; flex-direction: row; margin-top: 60%">
+      <div style="flex: 1">
+        <div
+          class="item"
+          data-aos="fade-right"
+          data-aos-offset="500"
+          data-aos-duration="500"
+          style="text-align: right"
+        >
+          <p class="title-text">Forward-thinking</p>
+          <p class="content-text">
+            Our transparent workflow and latest technologies guarantee a
+            future-proof environment for your project.
+          </p>
+        </div>
+        <div
+          class="item"
+          data-aos="fade-right"
+          data-aos-offset="500"
+          data-aos-duration="500"
+          style="text-align: right; margin-top: 300px"
+        >
+          <p class="title-text">Customer-centric</p>
+          <p class="content-text">
+            We are as passionate about your project as you are. Your success
+            brings success to us. So we do our best to make your product great.
+          </p>
+        </div>
+        <div
+          class="item"
+          data-aos="fade-right"
+          data-aos-offset="500"
+          data-aos-duration="500"
+          style="text-align: right; margin-top: 300px"
+        >
+          <p class="title-text">Sustainable</p>
+          <p class="content-text">
+            Our team is happy to work remotely, providing a great work-life
+            balance and a near-zero carbon footprint. We also care about making
+            the world a better place through our social projects and those of
+            our clients.
+          </p>
+        </div>
+      </div>
+      <div
+        style="
+          flex: 0.5;
+          text-align: center;
+          height: 800px;
+          margin-bottom: 1000px;
+        "
+      >
+        <div class="focus">F</div>
+        <div class="focus">O</div>
+        <div class="focus">C</div>
+        <div class="focus">U</div>
+        <div class="focus">S</div>
+      </div>
+      <div style="flex: 1">
+        <div
+          class="item"
+          data-aos="fade-left"
+          data-aos-offset="500"
+          data-aos-duration="500"
+          style="text-align: left; margin-top: 300px"
+        >
+          <p class="title-text">Open-minded</p>
+          <p class="content-text">
+            We are always open to new challenges. We learn and improve
+            ourselves, keeping abreast of the latest digital technology trends.
+          </p>
+        </div>
+        <div
+          class="item"
+          data-aos="fade-left"
+          data-aos-offset="500"
+          data-aos-duration="500"
+          style="text-align: left; margin-top: 300px"
+        >
+          <p class="title-text">Uncompromised on quality</p>
+          <p class="content-text">
+            Our management has extensive experience working in German
+            organizations, which has made us precise in our work. No compromise
+            on quality is our core mantra.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+      });
+    </script>
+  </body>
+</html>
