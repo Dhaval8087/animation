@@ -29,7 +29,7 @@ body {
   height: 400px;
 }
 
-img {
+img[id="logo*"] {
   display: none;
 }
 

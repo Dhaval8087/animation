@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logo Particles</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/address-animation.css" />
+  </head>
+
+  <body style="background: linear-gradient(103.34deg, #18162b 32.46%, #2f416f 145.17%);">
+    <div class="nav-wrapper">
+      <a href="./particle.html">Particles</a>
+      <a href="./map.html">Map</a>
+      <a href="./line-navigation.html">Line Navigation</a>
+      <a href="./spider-particle.html">Spider Particle</a>
+      <a href="./icon-animation.html">Icon Animation</a>
+      <a href="./focus-animation.html">Focus Animation</a>
+      <a href="./SKIY31-404.html">SKIY31-404</a>
+      <a href="./address-animation.html">Address animation</a>
+    </div>
+
+    <div class="address-wrapper">
+      <div class="dot selected-location" id="loc-dot"></div>
+      <div class="addresses">
+        <div class="address-item">
+          <span class="location-name" onclick="onLocationClick(event, 0)"
+            >Mannheim, Germany <img src="./assets/images/twemoji_flag-germany.svg" class="location-flag" /> </span
+          >
+          <span class="location-address"
+            >MAFINEX Technologiezentrum Julius-Hatry-Straße 1
+          </span>
+        </div>
+        <div class="address-item">
+          <span class="location-name" onclick="onLocationClick(event, 1)"
+            >Mutterstadt, Germany <img src="./assets/images/twemoji_flag-germany.svg" class="location-flag" /> </span
+            ></span
+          >
+          <span class="location-address">Oggersheimer Str. 42 </span>
+        </div>
+        <div class="address-item">
+          <span class="location-name" onclick="onLocationClick(event, 2)"
+            >Lviv, Ukraine <img src="./assets/images/twemoji_flag-ukraine.svg" class="location-flag" /> </span
+            ></span
+          >
+          <span class="location-address">Yevhena Petrushevycha Square 5 </span>
+        </div>
+        <div class="address-item">
+          <span class="location-name" onclick="onLocationClick(event, 3)"
+            >Coimbatore, India <img src="./assets/images/twemoji_flag-india.svg" class="location-flag" /> </span
+            ></span
+          >
+          <span class="location-address"
+            >Regus, 3rd Floor 1045 Srivari Srimath
+          </span>
+        </div>
+      </div>
+      <div class="map">
+        <div class="dot map-location" id="map-loc-dot"></div>
+        <img src="./assets/images/map.png" height="100%" width="100%" />
+      </div>
+    </div>
+    <script src="./assets/js/address-animation.js"></script>
+  </body>
+</html>

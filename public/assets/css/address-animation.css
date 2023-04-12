@@ -1,0 +1,81 @@
+.address-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+}
+
+.dot {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #ff7900 0%,
+    rgba(28, 40, 152, 0.91) 27.08%,
+    rgba(28, 38, 128, 0) 100%
+  );
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.dot.selected-location {
+  position: absolute;
+  top: -30px;
+  left: 4%;
+  transition: all 0.3s ease-in-out;
+}
+
+.dot.map-location {
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  top: 20%;
+  right: 21%;
+}
+
+.addresses {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 10%;
+}
+
+.address-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+  max-width: 610px;
+}
+
+.location-name {
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  color: #ff7900;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.location-flag {
+  margin-left: 5px;
+}
+
+.location-address {
+  padding-left: 106px;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.map {
+  width: 500px;
+  height: 500px;
+}
